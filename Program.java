@@ -22,5 +22,8 @@ public class Program {
         lista.adiciona(1, novAluno);
         System.out.println(lista.contem(novAluno));
         System.out.println(lista);
+
+        lista.remove(1);
+        System.out.println(lista);
     }
 }

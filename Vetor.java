@@ -37,7 +37,11 @@ public class Vetor {
     }
 
     public void remove(int posicao) {
+        for (int i = posicao; i < totalDeAlunos; i++) {
+            alunos[i] = alunos[i + 1];
+        }
 
+        totalDeAlunos--;
     }
 
     public boolean contem(Aluno aluno) {
