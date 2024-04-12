@@ -35,6 +35,11 @@ public class Vetor {
     }
 
     public boolean contem(Aluno aluno) {
+        for (int i = 0; i < totalDeAlunos; i++) {
+            if (aluno.equals(alunos[i])) {
+                return true;
+            }
+        }
         return false;
     }
 
