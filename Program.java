@@ -25,5 +25,6 @@ public class Program {
 
         lista.remove(1);
         System.out.println(lista);
+
     }
 }
