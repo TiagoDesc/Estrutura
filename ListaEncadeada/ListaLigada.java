@@ -35,4 +35,23 @@ public class ListaLigada {
         return false;
     }
 
+    @Override
+    public String toString() {
+        if (this.totalDeElementos == 0) {
+            return "[]";
+        }
+
+        Celula atual = primeira;
+
+        StringBuilder sb = new StringBuilder("[");
+        for (int i = 0; i < totalDeElementos; i++) {
+            sb.append(atual.getElemento());
+            sb.append(",");
+
+            atual = atual.getProximo();
+        }
+        sb.append("]");
+        return sb.toString();
+    }
+
 }
