@@ -12,6 +12,10 @@ public class TesteListaLigada {
         System.out.println(lista);
         lista.adicionaNoComeco("Guilherme");
         System.out.println(lista);
+
+        System.out.println(lista.pega(2).getElemento());
+        System.out.println(lista.pega(1).getElemento());
+        System.out.println(lista.pega(0).getElemento());
     }
 
 }
