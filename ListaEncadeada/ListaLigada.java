@@ -21,7 +21,8 @@ public class ListaLigada {
     }
 
     public void adiciona(int posicao, Object elemento) {
-
+        Celula nova = new Celula(elemento, null);
+        this.ultimo = nova;
     }
 
     public Celula pega(int posicao) {
