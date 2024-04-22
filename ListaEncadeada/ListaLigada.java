@@ -38,17 +38,6 @@ public class ListaLigada {
         return atual;
     }
 
-    public Celula pega1(int posicao) {
-        Celula atual = this.primeira;
-        for (int i = 0; i < posicao; i++) {
-            if (atual.getProximo() != null) {
-                atual = atual.getProximo();
-            }
-        }
-
-        return atual;
-    }
-
     public Celula pega2(int posicao) {
         Celula atual = this.primeira;
         for (int i = 0; i < posicao; i++) {
