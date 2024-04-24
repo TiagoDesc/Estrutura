@@ -20,7 +20,6 @@ public class ListaLigada {
         if (this.totalDeElementos == 0) {
             adicionaNoComeco(elemento);
         } else {
-
             Celula nova = new Celula(elemento, null);
             this.ultimo.setProximo(nova);
             this.ultimo = nova;
