@@ -16,7 +16,7 @@ public class ListaLigada {
         totalDeElementos++;
     }
 
-    public void adiciona(Object elemento) {
+    public void adicionaNoFim(Object elemento) {
         if (this.totalDeElementos == 0) {
             adicionaNoComeco(elemento);
         } else {
@@ -27,7 +27,7 @@ public class ListaLigada {
         }
     }
 
-    public void adiciona(int posicao, Object elemento) {
+    public void adicionaNoMeio(int posicao, Object elemento) {
 
     }
 

@@ -13,7 +13,7 @@ public class TesteListaLigada {
         lista.adicionaNoComeco("Guilherme");
         System.out.println(lista);
 
-        lista.adiciona("Marcelo");
+        lista.adicionaNoFim("Marcelo");
         System.out.println(lista);
     }
 
