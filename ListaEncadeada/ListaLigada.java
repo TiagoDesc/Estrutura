@@ -17,10 +17,6 @@ public class ListaLigada {
     }
 
     public void adiciona(Object elemento) {
-
-    }
-
-    public void adiciona(int posicao, Object elemento) {
         if (this.totalDeElementos == 0) {
             adicionaNoComeco(elemento);
         } else {
@@ -30,6 +26,10 @@ public class ListaLigada {
             this.ultimo = nova;
             this.totalDeElementos++;
         }
+    }
+
+    public void adiciona(int posicao, Object elemento) {
+
     }
 
     public Celula pega(int posicao) {
