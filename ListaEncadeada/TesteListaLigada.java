@@ -18,6 +18,9 @@ public class TesteListaLigada {
 
         lista.adicionaNoMeio(2, "Gabriel");
         System.out.println(lista);
+
+        Object x = lista.pega(2);
+        System.out.println(x);
     }
 
 }

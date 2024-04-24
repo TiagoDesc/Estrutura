@@ -59,15 +59,8 @@ public class ListaLigada {
 
     }
 
-    public Celula pega(int posicao) {
-        Celula atual = this.primeira;
-        for (int i = 0; i < posicao; i++) {
-            if (atual.getProximo() != null) {
-                atual = atual.getProximo();
-            }
-        }
-
-        return atual;
+    public Object pega(int posicao) {
+        return this.pegaCelula(posicao).getElemento();
     }
 
     public void remove(int posicao) {
