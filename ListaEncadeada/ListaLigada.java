@@ -21,10 +21,15 @@ public class ListaLigada {
     }
 
     public void adiciona(int posicao, Object elemento) {
-        Celula nova = new Celula(elemento, null);
-        this.ultimo.setProximo(nova);
-        this.ultimo = nova;
-        this.totalDeElementos++;
+        if (this.totalDeElementos == 0) {
+            adicionaNoComeco(elemento);
+        } else {
+
+            Celula nova = new Celula(elemento, null);
+            this.ultimo.setProximo(nova);
+            this.ultimo = nova;
+            this.totalDeElementos++;
+        }
     }
 
     public Celula pega(int posicao) {
