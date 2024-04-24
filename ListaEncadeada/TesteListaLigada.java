@@ -15,6 +15,9 @@ public class TesteListaLigada {
 
         lista.adicionaNoFim("Marcelo");
         System.out.println(lista);
+
+        lista.adicionaNoMeio(2, "Gabriel");
+        System.out.println(lista);
     }
 
 }
