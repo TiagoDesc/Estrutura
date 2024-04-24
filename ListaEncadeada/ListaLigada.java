@@ -46,6 +46,17 @@ public class ListaLigada {
 
     public void adicionaNoMeio(int posicao, Object elemento) {
 
+        if (posicao == 0) {
+            adicionaNoComeco(elemento);
+        } else if (posicao == this.totalDeElementos) {
+            adicionaNoFim(elemento);
+        } else {
+            Celula anterior = this.pegaCelula(posicao - 1);
+            Celula nova = new Celula(elemento, anterior.getProximo());
+            anterior.setProximo(nova);
+            this.totalDeElementos++;
+        }
+
     }
 
     public Celula pega(int posicao) {
