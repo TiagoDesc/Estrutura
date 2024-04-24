@@ -27,6 +27,23 @@ public class ListaLigada {
         }
     }
 
+    private boolean posicaoOcupada(int posicao) {
+        return posicao >= 0 && posicao <= this.totalDeElementos;
+    }
+
+    private Celula pegaCelula(int posicao) {
+        if (!posicaoOcupada(posicao)) {
+            throw new IllegalArgumentException("Posição inexistente!");
+        }
+
+        Celula atual = primeira;
+        for (int i = 0; i < posicao; i++) {
+            atual = atual.getProximo();
+        }
+
+        return atual;
+    }
+
     public void adicionaNoMeio(int posicao, Object elemento) {
 
     }
