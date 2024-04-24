@@ -63,6 +63,14 @@ public class ListaLigada {
         return this.pegaCelula(posicao).getElemento();
     }
 
+    public void removeDoComeco() {
+        if (this.totalDeElementos == 0) {
+            throw new IllegalArgumentException("Lista vazia.");
+        }
+
+        this.primeira = this.primeira.getProximo();
+    }
+
     public void remove(int posicao) {
 
     }
