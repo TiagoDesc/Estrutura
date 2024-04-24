@@ -69,6 +69,11 @@ public class ListaLigada {
         }
 
         this.primeira = this.primeira.getProximo();
+        this.totalDeElementos--;
+
+        if (this.totalDeElementos == 0) {
+            this.ultimo = null;
+        }
     }
 
     public void remove(int posicao) {
