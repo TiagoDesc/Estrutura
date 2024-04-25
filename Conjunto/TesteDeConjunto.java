@@ -18,6 +18,13 @@ public class TesteDeConjunto {
         conjunto.remove("Mauricio");
         System.out.println(conjunto);
 
+        conjunto.adiciona("Mauricio");
+        conjunto.adiciona("Mauricio");
+        conjunto.adiciona("Guilherme");
+        conjunto.adiciona("Paulo");
+        conjunto.remove("Guilerme");
+
+        System.out.println(conjunto);
     }
 
 }
