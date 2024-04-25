@@ -22,12 +22,17 @@ public class Conjunto {
     }
 
     private boolean contem(String palavra) {
-
-        throw new UnsupportedOperationException("Unimplemented method 'contem'");
+        int indice = calculaIndiceTabela(palavra);
+        return tabela.get(indice).contains(palavra);
     }
 
     private int calculaIndiceTabela(String palavra) {
         return palavra.toLowerCase().charAt(0) % 26;
+    }
+
+    @Override
+    public String toString() {
+        return tabela.toString();
     }
 
 }
