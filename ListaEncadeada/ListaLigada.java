@@ -7,23 +7,22 @@ public class ListaLigada {
     private int totalDeElementos = 0;
 
     public void adicionaNoComeco(Object elemento) {
-        Celula nova = new Celula(elemento, primeira);
-        this.primeira = nova;
-
         if (this.totalDeElementos == 0) {
-            this.ultimo = this.primeira;
+            Celula nova = new Celula(elemento);
+            this.primeira = nova;
+            this.ultimo = nova;
+        } else {
+            Celula nova = new Celula(elemento, this.primeira);
+            this.primeira.setAnterior(nova);
+            this.primeira = nova;
         }
-        totalDeElementos++;
     }
 
     public void adicionaNoFim(Object elemento) {
         if (this.totalDeElementos == 0) {
             adicionaNoComeco(elemento);
         } else {
-            Celula nova = new Celula(elemento, null);
-            this.ultimo.setProximo(nova);
-            this.ultimo = nova;
-            this.totalDeElementos++;
+            Celula nova = new Celula(elemento);
         }
     }
 
