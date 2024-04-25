@@ -1,11 +1,12 @@
 package Conjunto;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 public class Conjunto {
 
-    private LinkedList<LinkedList<String>> tabela = new LinkedList<LinkedList<String>>();
+    private ArrayList<LinkedList<String>> tabela = new ArrayList<LinkedList<String>>();
 
     public Conjunto() {
         for (int i = 0; i < 26; i++) {
