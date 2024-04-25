@@ -22,6 +22,14 @@ public class Conjunto {
         }
     }
 
+    public void remove(String palavra) {
+        if (!contem(palavra)) {
+            int indice = calculaIndiceTabela(palavra);
+            List<String> lista = tabela.get(indice);
+            lista.remove(palavra);
+        }
+    }
+
     private boolean contem(String palavra) {
         int indice = calculaIndiceTabela(palavra);
         return tabela.get(indice).contains(palavra);
