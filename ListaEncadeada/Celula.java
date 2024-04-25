@@ -5,7 +5,8 @@ public class Celula {
     private Object elemento;
     private Celula proximo;
 
-    public Celula() {
+    public Celula(Object elemento) {
+
     }
 
     public Celula(Object elemento, Celula proximo) {
