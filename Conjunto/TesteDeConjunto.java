@@ -14,6 +14,10 @@ public class TesteDeConjunto {
         conjunto.adiciona("Marcelo");
         conjunto.adiciona("Guilherme");
         System.out.println(conjunto);
+
+        conjunto.remove("Mauricio");
+        System.out.println(conjunto);
+
     }
 
 }

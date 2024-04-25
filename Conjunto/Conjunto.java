@@ -23,7 +23,7 @@ public class Conjunto {
     }
 
     public void remove(String palavra) {
-        if (!contem(palavra)) {
+        if (contem(palavra)) {
             int indice = calculaIndiceTabela(palavra);
             List<String> lista = tabela.get(indice);
             lista.remove(palavra);
